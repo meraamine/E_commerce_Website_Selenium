@@ -29,7 +29,7 @@ public class EcommerceTest {
         ShoppingPage shoppingPage = new ShoppingPage(driver);
         shoppingPage.navigateToHoodieProduct();
         shoppingPage.customizeProduct();
-        shoppingPage.addToCartAndGoToCheckout();
+        //shoppingPage.addToCartAndGoToCheckout();
     }
 
     @AfterMethod

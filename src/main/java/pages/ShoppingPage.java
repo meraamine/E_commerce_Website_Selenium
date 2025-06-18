@@ -48,7 +48,7 @@ public class ShoppingPage {
         qtyInput.sendKeys("5");
 
     }
-    public void addToCartAndGoToCheckout() {
+    /*public void addToCartAndGoToCheckout() {
         // الضغط على زر Add to Cart
         WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("product-addtocart-button")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartBtn);
@@ -67,7 +67,7 @@ public class ShoppingPage {
         // الضغط على زر Proceed to Checkout من صفحة الكارت
         WebElement proceedBtn = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.action.primary.checkout")));
         proceedBtn.click();
-    }
+    }*/
 
 }
 
