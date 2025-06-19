@@ -106,7 +106,13 @@ GitHub: https://github.com/meraamine
 📄 License
 This project is for learning/demo purposes and does not use a specific license.
 
+1. ✅ Automate the 3 test cases
 
+| Test Case                  | الوصف                                                                 |
+| -------------------------- | --------------------------------------------------------------------- |
+| TC01 - Create Account      | فتح صفحة إنشاء حساب، وملء البيانات، والضغط على "Create Account"       |
+| TC02 - Add Product to Cart | التصفح للقسم، اختيار منتج، تحديد المقاس واللون والكمية، وإضافته للسلة |
+| TC03 - Complete Checkout   | ملء بيانات الشحن، اختيار طريقة الشحن، الضغط على Place Order           |
 
 
 
