@@ -8,7 +8,7 @@ import pages.ShoppingPage;
 import pages.ShippingPage;
 
 
-
+@Listeners(utils.TestListener.class)
 public class EcommerceTest {
     WebDriver driver;
 
@@ -22,10 +22,10 @@ public class EcommerceTest {
     public void testFullScenario() throws InterruptedException {
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
         CreateAccountPage accountPage = new CreateAccountPage(driver);
-        accountPage.enterFirstName("laGGGscccttMMest");
-        accountPage.enterLastName("lasHGccGtlaMMst");
-        accountPage.enterEmail("lastGGlascct1MM@test.com");
-        accountPage.enterPassword("laGGstlaccsMMt22226655@@$$S");
+        accountPage.enterFirstName("laGcdGGscccttMMebbst");
+        accountPage.enterLastName("lasHGcddcGtlaMMbbst");
+        accountPage.enterEmail("lastGGlasddcctd1bbMM@test.com");
+        accountPage.enterPassword("laGGstlacddcbbsMMt22226655@@$$S");
         accountPage.clickCreateAccountButton();
         Thread.sleep(500); // optional
 
