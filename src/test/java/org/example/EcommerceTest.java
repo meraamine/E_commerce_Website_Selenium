@@ -5,6 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import pages.CreateAccountPage;
 import pages.ShoppingPage;
+import pages.ShippingPage;
+
+
 
 public class EcommerceTest {
     WebDriver driver;
@@ -19,17 +22,22 @@ public class EcommerceTest {
     public void testFullScenario() throws InterruptedException {
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
         CreateAccountPage accountPage = new CreateAccountPage(driver);
-        accountPage.enterFirstName("asaraAAMsaraA22");
-        accountPage.enterLastName("SsaaaraAASaraMA22");
-        accountPage.enterEmail("SarsaraaaSS2552@test.com");
-        accountPage.enterPassword("saraacaSaraRAASALAMAA226655@@$$S");
+        accountPage.enterFirstName("laGGGsttMMest");
+        accountPage.enterLastName("lasHGGtlaMMst");
+        accountPage.enterEmail("lastGGlast1MM@test.com");
+        accountPage.enterPassword("laGGstlasMMt22226655@@$$S");
         accountPage.clickCreateAccountButton();
-        Thread.sleep(2000); // optional
+        Thread.sleep(500); // optional
 
         ShoppingPage shoppingPage = new ShoppingPage(driver);
         shoppingPage.navigateToHoodieProduct();
         shoppingPage.customizeProduct();
-        //shoppingPage.addToCartAndGoToCheckout();
+        shoppingPage.addToCartAndGoToCheckout();
+
+        ShippingPage shippingPage = new ShippingPage(driver);
+        shippingPage.addAdShippingDetails("123 Test Street");
+        shippingPage.selectFlatRateShipping();
+        shippingPage.clickNextAfterShipping();
     }
 
     @AfterMethod
