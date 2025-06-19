@@ -107,17 +107,7 @@ GitHub: https://github.com/meraamine
 This project is for learning/demo purposes and does not use a specific license.
 
 
----
 
-### 📌 خطوات إنشاء الملف:
-
-1. في مشروعك، كليك يمين على الجذر `E_commerce_Website_Selenium`
-2. اختار `New > File`
-3. اكتب اسم الملف: `README.md`
-4. الصق المحتوى اللي فوق
-5. لو المشروع على GitHub، الملف ده هيتعرض تلقائيًا في الصفحة الرئيسية
-
----
 
 
 
