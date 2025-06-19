@@ -54,22 +54,22 @@ public class ShoppingPage {
     public void addToCartAndGoToCheckout() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-        // 1. Add to cart
+
         WebElement addToCartBtn = wait.until(ExpectedConditions.elementToBeClickable(By.id("product-addtocart-button")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartBtn);
 
-        // 2. Wait for success message
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.message-success")));
 
-        // 3. Open mini-cart
+
         WebElement cartIcon = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//a[contains(@class, 'action showcart')]")));
         cartIcon.click();
 
-        // 4. Wait for mini-cart to open
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.block-minicart")));
 
-        // 5. Try clicking "View and Edit Cart", fallback if needed
+
         try {
             WebElement viewCartLink = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.action.viewcart")));
             viewCartLink.click();
@@ -78,22 +78,21 @@ public class ShoppingPage {
             driver.get("https://yourdomain.com/checkout/cart");
         }
 
-        // 6. Wait for cart page and click "Proceed to Checkout"
-        // التأكد من الوصول لصفحة الكارت
+
         wait.until(ExpectedConditions.urlContains("/checkout/cart"));
 
-// انتظار وجود الزر
+
         WebElement proceedBtn = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.cssSelector("button.action.primary.checkout")
         ));
 
-// تمرير الشاشة للزر
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", proceedBtn);
 
-// تأخير بسيط اختياري
+
         Thread.sleep(1000);
 
-// الضغط على الزر بالـ JavaScript لتجاوز أي مشاكل overlay أو CSS
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", proceedBtn);
 
 
