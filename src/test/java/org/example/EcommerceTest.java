@@ -22,10 +22,10 @@ public class EcommerceTest {
     public void testFullScenario() throws InterruptedException {
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
         CreateAccountPage accountPage = new CreateAccountPage(driver);
-        accountPage.enterFirstName("laGGGsttMMest");
-        accountPage.enterLastName("lasHGGtlaMMst");
-        accountPage.enterEmail("lastGGlast1MM@test.com");
-        accountPage.enterPassword("laGGstlasMMt22226655@@$$S");
+        accountPage.enterFirstName("laGGGscccttMMest");
+        accountPage.enterLastName("lasHGccGtlaMMst");
+        accountPage.enterEmail("lastGGlascct1MM@test.com");
+        accountPage.enterPassword("laGGstlaccsMMt22226655@@$$S");
         accountPage.clickCreateAccountButton();
         Thread.sleep(500); // optional
 
