@@ -55,12 +55,18 @@ E_commerce_Website_Selenium/
 
 ## 🧪 How to Run the Project
 
+To run the automated test suite, follow these steps:
+
+📦 Prerequisites:
 ### ✅ Prerequisites
 - Java JDK 17+ installed
-- Maven installed
+- Maven installed and configured (mvn -v)
 - Chrome browser installed
-- ChromeDriver compatible with your Chrome version
+- ChromeDriver compatible with your Chrome version  (configured in PATH or specified in code)
 - IntelliJ or any Java IDE
+
+
+📁 Project Setup:
 
 ### ✅ Steps
 1. Clone the repository
@@ -68,6 +74,55 @@ E_commerce_Website_Selenium/
 3. Run `EcommerceTest.java` as TestNG test
 
 ---
+Clone the repository from GitHub:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ecommerce-automation.git
+cd ecommerce-automation
+Install dependencies:
+
+bash
+Copy
+Edit
+mvn clean install
+🚀 Running Tests:
+
+Using IntelliJ or any IDE:
+
+Open the project.
+
+Right-click the EcommerceTest.java class and select Run.
+
+Or via terminal:
+
+bash
+Copy
+Edit
+mvn test
+📊 Viewing Reports:
+
+TestNG Report:
+Open test-output/index.html in your browser.
+
+Extent Report (if enabled):
+Open test-output/ExtentReports/ExtentReport.html
+
+🛠️ Notes:
+
+Each test run generates new email data to avoid duplication.
+
+To enable ExtentReports, ensure TestListener is registered in testng.xml:
+
+xml
+Copy
+Edit
+<listeners>
+  <listener class-name="utils.TestListener"/>
+</listeners>
+
+
 
 ## ⚙️ Maven Dependencies (pom.xml)
 
@@ -89,8 +144,10 @@ Make sure you have the following dependencies:
 
 📸 Screenshots 
  
+![Tests](https://github.com/user-attachments/assets/221c95f9-5678-4f8c-89f4-b5c92c79cc72)
 
-https://github.com/user-attachments/assets/c872ba80-dff3-4132-a48c-15d0b72a28da
+https://github.com/user-attachments/assets/b892d70f-7395-4b12-9fea-4deee86bba49
+
 
 
 ✨ Improvements for Future
