@@ -144,9 +144,8 @@ Make sure you have the following dependencies:
 
 📸 Screenshots 
  
-![Tests](https://github.com/user-attachments/assets/221c95f9-5678-4f8c-89f4-b5c92c79cc72)
-
 https://github.com/user-attachments/assets/b892d70f-7395-4b12-9fea-4deee86bba49
+![Tests](https://github.com/user-attachments/assets/31e54bad-42bc-45ff-9ba9-e2407ab70623)
 
 
 
