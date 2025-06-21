@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 import pages.CreateAccountPage;
 import pages.ShoppingPage;
 import pages.ShippingPage;
+import utils.DataGenerator;
 
 
 @Listeners(utils.TestListener.class)
@@ -21,13 +22,19 @@ public class EcommerceTest {
     @Test
     public void testFullScenario() throws InterruptedException {
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+
+        String firstName = DataGenerator.generateRandomName("Mera");
+        String lastName = DataGenerator.generateRandomName("Amin");
+        String email = DataGenerator.generateRandomEmail();
+        String password = "Mera//@2@$MMt22226655@@$$S";
+
         CreateAccountPage accountPage = new CreateAccountPage(driver);
-        accountPage.enterFirstName("laGcdGGscccttMMebbst");
-        accountPage.enterLastName("lasHGcddcGtlaMMbbst");
-        accountPage.enterEmail("lastGGlasddcctd1bbMM@test.com");
-        accountPage.enterPassword("laGGstlacddcbbsMMt22226655@@$$S");
+        accountPage.enterFirstName(firstName);
+        accountPage.enterLastName(lastName);
+        accountPage.enterEmail(email);
+        accountPage.enterPassword(password);
         accountPage.clickCreateAccountButton();
-        Thread.sleep(500); // optional
+        Thread.sleep(500);
 
         ShoppingPage shoppingPage = new ShoppingPage(driver);
         shoppingPage.navigateToHoodieProduct();
