@@ -11,7 +11,7 @@ This project automates a full user flow on an e-commerce website (Magento), incl
 ## 📁 Project Structure
 
 E_commerce_Website_Selenium/
-│
+│    
 ├── src/
 │ ├── main/
 │ │ └── java/pages/
@@ -33,7 +33,7 @@ E_commerce_Website_Selenium/
 | Tool          | Purpose                             |
 |---------------|-------------------------------------|
 | Java          | Main programming language           |
-| Selenium WebDriver | Browser automation            |
+| Selenium WebDriver | Browser automation             |
 | TestNG        | Test framework                      |
 | Maven         | Build and dependency management     |
 | ChromeDriver  | Chrome browser control              |
